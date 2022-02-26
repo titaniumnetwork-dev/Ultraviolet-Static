@@ -3,7 +3,7 @@ const input = document.querySelector('input');
 
 form.addEventListener('submit', async event => {
     event.preventDefault();
-    window.navigator.serviceWorker.register(__uv$config.sw, {
+    window.navigator.serviceWorker.register('./uv.sw-handler.js', {
         scope: __uv$config.prefix
     }).then(() => {
         let url = input.value.trim();
