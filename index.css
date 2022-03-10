@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 * {
     font-family: Roboto;
@@ -10,6 +19,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fa-magnifying-glass {
+    color: white;
 }
 
 .logo-wrapper {
@@ -17,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 .logo {
@@ -30,6 +46,10 @@ body {
     color: #FFF;
 }
 
+.logo-wrapper h1 {
+    color: white;
+}
+
 footer {
     margin-top: auto;
     width: 93%;
@@ -40,7 +60,8 @@ footer {
     align-items: center;
 }
 
-footer a , footer span {
+footer a,
+footer span {
     margin: 0 15px;
     text-decoration: none;
     color: #FFF;
@@ -51,7 +72,6 @@ footer a {
     cursor: pointer;
 }
 
-
 footer a:hover {
     text-decoration: underline;
 }
@@ -61,12 +81,22 @@ form {
     justify-content: center;
 }
 
+.desc {
+    display: flex;
+    justify-content: center;
+}
+
+.desc p {
+    width: 560px;
+    color: rgba(253, 253, 253, 0.514);
+}
+
 form input {
     background: none;
     font-family: inherit;
     padding: 0px 17px;
     height: 48px;
-    border: 1px solid  rgb(255, 255, 255, .2);
+    border: 1px solid rgb(255, 255, 255, .2);
     color: var(--text-color);
     border-radius: 3px;
     outline: none;
@@ -74,4 +104,12 @@ form input {
     margin-top: 5px;
     border-radius: 50px;
     color: #FFF;
+}
+
+form input:focus {
+    border: 1px solid rgba(253, 253, 253, 0.514);
+    border-radius: 6px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
