@@ -96,6 +96,7 @@ class UVServiceWorker extends EventEmitter {
             };
 
             if (cookieStr) requestCtx.headers.cookie = cookieStr;
+            requestCtx.headers.Host = requestCtx.url.host;
 
 
             const reqEvent = new HookEvent(requestCtx, null, null);
