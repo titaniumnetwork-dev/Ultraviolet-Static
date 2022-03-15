@@ -29,8 +29,6 @@ class UVServiceWorker extends EventEmitter {
                 'accept-encoding', 
                 'connection',
                 'content-length',
-                'content-type',
-                'user-agent',
             ],
         };
         this.method = {
@@ -79,7 +77,7 @@ class UVServiceWorker extends EventEmitter {
             if (request.referrer && request.referrer.startsWith(location.origin)) {
                 const referer = new URL(ultraviolet.sourceUrl(request.referrer));
 
-                if (ultraviolet.meta.url.origin !== referer.origin && request.mode === 'cors') {
+                if (requestCtx.headers.origin || ultraviolet.meta.url.origin !== referer.origin && request.mode === 'cors') {
                     requestCtx.headers.origin = referer.origin;
                 };
 
