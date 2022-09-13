@@ -1,0 +1,10 @@
+{
+	"name": "ultraviolet-static",
+	"main": "lib/index.js",
+	"version": "1.0.0",
+	"type": "module",
+	"files": [
+		"public",
+		"lib"
+	]
+}
