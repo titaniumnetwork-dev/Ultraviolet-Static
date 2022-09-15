@@ -1,17 +1,21 @@
 {
-	"name": "ultraviolet-static",
-	"main": "lib/index.js",
-	"version": "1.0.0",
-	"type": "module",
-	"scripts": {
-		"build": "node scripts/build.js"
-	},
-	"files": [
-		"dist",
-		"lib"
-	],
-	"dependencies": {
-		"fs-extra": "^10.1.0",
-		"ultraviolet": "https://github.com/titaniumnetwork-development/Ultraviolet/releases/download/v1.0.1/ultraviolet-1.0.1.tgz"
-	}
+  "name": "ultraviolet-static",
+  "main": "lib/index.js",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "ultraviolet": "https://github.com/titaniumnetwork-development/Ultraviolet/releases/download/v1.0.1/ultraviolet-1.0.1.tgz"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1"
+  }
 }
