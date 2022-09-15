@@ -1,7 +1,7 @@
 {
   "name": "ultraviolet-static",
   "main": "lib/index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.js"
