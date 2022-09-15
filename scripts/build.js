@@ -1,5 +1,5 @@
 /**
- * Copies src & ultraviolet into the dist directory.
+ * Copies public & ultraviolet into the dist directory.
  */
 
 import fs from "fs-extra";
@@ -12,4 +12,4 @@ try {
 }
 
 await fs.copy(uvPath, "dist/uv/");
-await fs.copy("src", "dist/");
+await fs.copy("public", "dist/");
