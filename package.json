@@ -7,7 +7,7 @@
     "build": "node scripts/build.js"
   },
   "files": [
-    "dist",
+    "public",
     "lib"
   ],
   "dependencies": {
