@@ -17,20 +17,20 @@ $ cd Ultraviolet-Static
 2. Install dependencies
 
 ```sh
-npm install
+$ npm install
 ```
 
 3. Make your changes...
 4. Produce the `dist/` directory and import the Ultraviolet scripts
 
 ```sh
-npm run build
+$ npm run build
 ```
 
 5. Package for NPM to produce `ultraviolet-static.X.X.X.tar.gz` file
 
 ```sh
-npm pack
+$ npm pack
 ```
 
 ## Install in [Ultraviolet-Node](https://github.com/titaniumnetwork-development/Ultraviolet-Node.git)
