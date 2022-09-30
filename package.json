@@ -10,9 +10,6 @@
     "public",
     "lib"
   ],
-  "dependencies": {
-    "fs-extra": "^10.1.0"
-  },
   "peerDependencies": {
     "ultraviolet": "https://github.com/titaniumnetwork-development/Ultraviolet/releases/download/v1.0.1/ultraviolet-1.0.1.tgz"
   },
