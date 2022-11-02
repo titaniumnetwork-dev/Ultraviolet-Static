@@ -28,12 +28,44 @@ body {
   color: white;
 }
 
-.logo-wrapper {
+.flex-center {
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.header-center {
+  align-items: center;
   flex-direction: column;
   margin-top: 10%;
+}
+
+.left-margin {
+  margin: 0px 16px;
+}
+
+.error {
+  color: #ff6666 !important;
+  white-space: pre-wrap;
+}
+
+.error-green {
+  color: #66ff66 !important;
+}
+
+.register-sw {
+  color: white;
+  background: #555555;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 20px;
+  line-height: 16px;
+  display: none;
+}
+
+.register-sw:active {
+  background: #333333;
 }
 
 .logo {
@@ -74,16 +106,6 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-
-form {
-  display: flex;
-  justify-content: center;
-}
-
-.desc {
-  display: flex;
-  justify-content: center;
 }
 
 .desc p {
