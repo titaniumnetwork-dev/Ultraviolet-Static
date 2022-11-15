@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-development/Ultraviolet-Static/main/public/uv.png" height="200"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="200"></p>
 
 <h1 align="center">Ultraviolet-Static</h1>
 
@@ -9,7 +9,7 @@ Static files/assets used to spin up an Ultraviolet website.
 1. Clone the repository
 
 ```sh
-$ git clone https://github.com/titaniumnetwork-development/Ultraviolet-Static.git
+$ git clone https://github.com/titaniumnetwork-dev/Ultraviolet-Static.git
 > Cloning into Ultraviolet-Static...
 $ cd Ultraviolet-Static
 ```
@@ -33,13 +33,13 @@ $ npm run build
 $ npm pack
 ```
 
-## Install in [Ultraviolet-Node](https://github.com/titaniumnetwork-development/Ultraviolet-Node.git)
+## Install in [Ultraviolet-Node](https://github.com/titaniumnetwork-dev/Ultraviolet-Node.git)
 
 1. Follow installation steps until you need to run `npm install`
 2. Install the produced Ultraviolet-Static tgz (upload to Discord, Github, etc...) (see [Packaging](#packaging))
 
 ```sh
-$ npm install https://github.com/titaniumnetwork-development/Ultraviolet-Static/releases/download/v1.0.0/ultraviolet-static-1.0.0.tgz
+$ npm install https://github.com/titaniumnetwork-dev/Ultraviolet-Static/releases/download/v1.0.0/ultraviolet-static-1.0.0.tgz
 # OR
 $ npm install ../path/to/ultraviolet-static-1.0.0.tgz
 ```
