@@ -1,3 +1,4 @@
+"use strict";
 const error = document.getElementById("error");
 const errorCode = document.getElementById("error-code");
 const registerButton = document.getElementById("register-sw");

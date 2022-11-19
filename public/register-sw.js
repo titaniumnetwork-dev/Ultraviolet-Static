@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Global util
  * Used in 404.html and index.html

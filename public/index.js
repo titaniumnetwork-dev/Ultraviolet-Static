@@ -1,3 +1,4 @@
+"use strict";
 const form = document.getElementById("uv-form");
 const input = document.getElementById("uv-address");
 const error = document.getElementById("error");
