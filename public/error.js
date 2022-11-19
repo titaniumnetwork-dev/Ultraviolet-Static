@@ -1,6 +1,6 @@
-const error = document.querySelector("#error");
-const errorCode = document.querySelector("#error-code");
-const registerButton = document.querySelector("#register-sw");
+const error = document.getElementById("error");
+const errorCode = document.getElementById("error-code");
+const registerButton = document.getElementById("register-sw");
 
 if (location.pathname.startsWith(__uv$config.prefix)) {
   error.textContent = "Error: The service worker is not registered.";

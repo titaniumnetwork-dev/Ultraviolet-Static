@@ -1,7 +1,7 @@
-const form = document.querySelector("#uv-form");
-const input = document.querySelector("#uv-address");
-const error = document.querySelector("#error");
-const errorCode = document.querySelector("#error-code");
+const form = document.getElementById("uv-form");
+const input = document.getElementById("uv-address");
+const error = document.getElementById("error");
+const errorCode = document.getElementById("error-code");
 
 function isUrl(val = "") {
   if (
