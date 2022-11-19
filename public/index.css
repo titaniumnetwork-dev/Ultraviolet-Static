@@ -43,16 +43,18 @@ body {
   margin: 0px 16px;
 }
 
-.error {
+#error {
   color: #ff6666 !important;
   white-space: pre-wrap;
 }
 
-.error-green {
-  color: #66ff66 !important;
+#error-code {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.register-sw {
+#register-sw {
   color: white;
   background: #555555;
   cursor: pointer;
@@ -64,8 +66,12 @@ body {
   display: none;
 }
 
-.register-sw:active {
+#register-sw:active {
   background: #333333;
+}
+
+#register-sw.show {
+  display: block;
 }
 
 .logo {

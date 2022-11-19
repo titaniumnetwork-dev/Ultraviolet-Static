@@ -28,14 +28,12 @@
     </div>
     <div class="desc left-margin">
       <p>The server could not route your request.</p>
-      <p class="error"></p>
-      <input
-        type="button"
-        class="register-sw"
-        value="Register service worker"
-      />
+      <p id="error"></p>
+      <code id="error-code"></code>
+      <button id="register-sw" value="Register service worker">
+        Register ServiceWorker
+      </button>
     </div>
-
     <footer>
       <a
         title="For privacy implications related to Ultraviolet."
@@ -47,6 +45,7 @@
     </footer>
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
     <script src="error.js"></script>
   </body>
 </html>

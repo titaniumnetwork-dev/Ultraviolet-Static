@@ -1,22 +1,12 @@
-const stateContainer = document.getElementById("state");
+/**
+ * Global util
+ * Used in 404.html and index.html
+ */
+async function registerSW() {
+  if (!navigator.serviceWorker)
+    throw new Error("Your browser doesn't support service workers.");
 
-function finish(state) {
-  stateContainer.textContent = state;
-  console.log("Registering ultraviolet service worker... " + state);
-  window.parent.postMessage(state, "*");
-}
-
-try {
-  window.navigator.serviceWorker
-    .register("./sw.js", {
-      scope: __uv$config.prefix,
-    })
-    .then(() => {
-      finish("success");
-    })
-    .catch(() => {
-      finish("failure");
-    });
-} catch (e) {
-  finish("failure");
+  await navigator.serviceWorker.register("./sw.js", {
+    scope: __uv$config.prefix,
+  });
 }
