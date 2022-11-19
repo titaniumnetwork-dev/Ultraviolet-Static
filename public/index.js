@@ -1,5 +1,5 @@
-const form = document.querySelector("form");
-const input = document.querySelector("input");
+const form = document.querySelector("#uv-form");
+const input = document.querySelector("#uv-address");
 const error = document.querySelector("#error");
 const errorCode = document.querySelector("#error-code");
 
