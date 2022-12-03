@@ -1,20 +1,28 @@
 "use strict";
+/**
+ * @type {HTMLFormElement}
+ */
 const form = document.getElementById("uv-form");
-const input = document.getElementById("uv-address");
-const error = document.getElementById("error");
-const errorCode = document.getElementById("error-code");
-
-function isUrl(val = "") {
-  if (
-    /^http(s?):\/\//.test(val) ||
-    (val.includes(".") && val.substr(0, 1) !== " ")
-  )
-    return true;
-  return false;
-}
+/**
+ * @type {HTMLInputElement}
+ */
+const address = document.getElementById("uv-address");
+/**
+ * @type {HTMLInputElement}
+ */
+const searchEngine = document.getElementById("uv-search-engine");
+/**
+ * @type {HTMLParagraphElement}
+ */
+const error = document.getElementById("uv-error");
+/**
+ * @type {HTMLPreElement}
+ */
+const errorCode = document.getElementById("uv-error-code");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
+
   try {
     await registerSW();
   } catch (err) {
@@ -22,10 +30,7 @@ form.addEventListener("submit", async (event) => {
     errorCode.textContent = err.toString();
     throw err;
   }
-  let url = input.value.trim();
-  if (!isUrl(url)) url = "https://www.google.com/search?q=" + url;
-  else if (!(url.startsWith("https://") || url.startsWith("http://")))
-    url = "http://" + url;
 
-  window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  const url = search(address.value, searchEngine.value);
+  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });

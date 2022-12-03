@@ -43,18 +43,18 @@ body {
   margin: 0px 16px;
 }
 
-#error {
+#uv-error {
   color: #ff6666 !important;
   white-space: pre-wrap;
 }
 
-#error-code {
+#uv-error-code {
   font-size: 12px;
   color: #fff;
   font-family: "Courier New", Courier, monospace;
 }
 
-#register-sw {
+#uv-register-sw {
   color: white;
   background: #555555;
   cursor: pointer;
@@ -66,11 +66,11 @@ body {
   display: none;
 }
 
-#register-sw:active {
+#uv-register-sw:active {
   background: #333333;
 }
 
-#register-sw.show {
+#uv-register-sw.show {
   display: block;
 }
 

@@ -81,10 +81,15 @@
     </div>
 
     <form id="uv-form" class="flex-center">
-      <input id="uv-address" placeholder="Search the web freely" />
+      <input
+        id="uv-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="uv-address" type="text" placeholder="Search the web freely" />
     </form>
-    <p id="error"></p>
-    <code id="error-code"></code>
+    <p id="uv-error"></p>
+    <pre id="uv-error-code"></pre>
     <footer>
       <a
         title="Ultraviolet is a web proxy service maintained by TitaniumNetwork!"
@@ -117,6 +122,7 @@
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
     <script src="register-sw.js"></script>
+    <script src="search.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
