@@ -9,11 +9,8 @@
   }
 }
 
-* {
-  font-family: Roboto;
-}
-
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background: #111;
   display: flex;
@@ -81,7 +78,6 @@ body {
 
 .logo-wrapper .text {
   font-size: 75px;
-  font-family: "Roboto";
   color: #fff;
 }
 
