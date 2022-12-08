@@ -11,7 +11,7 @@
     "lib"
   ],
   "peerDependencies": {
-    "@titaniumnetwork-dev/ultraviolet": "^1.0.3"
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.4"
   },
   "devDependencies": {
     "eslint": "^8.23.0",
