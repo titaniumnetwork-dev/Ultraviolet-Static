@@ -117,6 +117,7 @@ form input {
   margin-top: 5px;
   border-radius: 50px;
   color: #fff;
+  transition: border-radius 0.1s;
 }
 
 form input:focus {
