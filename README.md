@@ -33,7 +33,7 @@ $ npm run build
 $ npm pack
 ```
 
-## Install in [Ultraviolet-Node](https://github.com/titaniumnetwork-dev/Ultraviolet-Node.git)
+## Install in [Ultraviolet-App](https://github.com/titaniumnetwork-dev/Ultraviolet-App.git)
 
 1. Follow installation steps until you need to run `npm install`
 2. Install the produced Ultraviolet-Static tgz (upload to Discord, Github, etc...) (see [Packaging](#packaging))
