@@ -3,9 +3,6 @@
   "main": "lib/index.js",
   "version": "1.0.2",
   "type": "module",
-  "scripts": {
-    "build": "node scripts/build.js"
-  },
   "files": [
     "public",
     "lib"
