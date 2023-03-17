@@ -22,6 +22,8 @@ Here's how to get the remaining scripts for the purpose of hosting this reposito
 4. Open the tarball, navigate to the `dist` directory, and extract all the scripts with the exception of `uv.config.js` (we already have a configuration) into the `public/uv/` directory in this repository.
    You may see `.map` files. These are used for debugging. If they're too large, you can omit them without any errors.
 
+   Do not copy `uv.config.js` from the archive!
+
 ### Bare server
 
 You will need to point your Bare server to an external one/a different directory (if you're using reverse proxy software).
