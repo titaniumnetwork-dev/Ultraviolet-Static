@@ -74,13 +74,20 @@ body {
 }
 
 footer {
+  margin: 0 5vw;
   margin-top: auto;
-  width: 93%;
-  align-self: center;
-  height: 80px;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+footer > div {
   display: flex;
   justify-content: left;
   align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 footer a,
