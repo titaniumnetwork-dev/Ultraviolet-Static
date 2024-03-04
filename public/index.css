@@ -28,6 +28,16 @@ body {
   margin: 0px 16px;
 }
 
+#uv-frame {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+}
+
 #uv-error {
   color: #ff6666 !important;
   white-space: pre-wrap;
