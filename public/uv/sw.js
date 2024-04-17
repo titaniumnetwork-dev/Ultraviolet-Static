@@ -5,4 +5,14 @@ importScripts(__uv$config.sw || 'uv.sw.js');
 
 const sw = new UVServiceWorker();
 
-self.addEventListener('fetch', (event) => event.respondWith(sw.fetch(event)));
+
+self.addEventListener('fetch', event => {
+    event.respondWith(
+        (async ()=>{
+            if(event.request.url.startsWith(location.origin + __uv$config.prefix)) {
+                return await uv.fetch(event);
+            }
+            return await fetch(event.request);
+        })()
+    );
+});
