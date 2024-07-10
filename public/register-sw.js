@@ -25,8 +25,4 @@ async function registerSW() {
   }
 
   await navigator.serviceWorker.register(stockSW);
-
-  // Register the EpoxyClient transport to be used for network requests
-  let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
-  await BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
 }
