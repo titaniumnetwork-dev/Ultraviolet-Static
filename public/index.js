@@ -23,8 +23,8 @@ const errorCode = document.getElementById("uv-error-code");
 (async () => {
 	let connection = new BareMux.BareMuxConnection("/baremux/worker.js")
 	let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
-	if (await connection.getTransport() !== "/epoxy/module.js") {
-		await connection.setTransport("/epoxy/module.js", [{ wisp: wispUrl }]);
+	if (await connection.getTransport() !== "/epoxy/index.mjs") {
+		await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
 	}
 })();
 
