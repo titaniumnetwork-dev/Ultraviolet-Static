@@ -19,14 +19,7 @@ const error = document.getElementById("uv-error");
  * @type {HTMLPreElement}
  */
 const errorCode = document.getElementById("uv-error-code");
-
-(async () => {
-	let connection = new BareMux.BareMuxConnection("/baremux/worker.js")
-	let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
-	if (await connection.getTransport() !== "/epoxy/index.mjs") {
-		await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
-	}
-})();
+const connection = new BareMux.BareMuxConnection("/baremux/worker.js")
 
 form.addEventListener("submit", async (event) => {
 	event.preventDefault();
@@ -43,5 +36,9 @@ form.addEventListener("submit", async (event) => {
 
 	let frame = document.getElementById("uv-frame");
 	frame.style.display = "block";
+	let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
+	if (await connection.getTransport() !== "/epoxy/index.mjs") {
+		await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
+	}
 	frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
