@@ -142,6 +142,26 @@ footer a:hover {
   border-radius: 6px;
 }
 
+#uv-gotodiscord {
+  background-color: #3e3e3e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#uv-gotodiscord:hover {
+  background-color: #4f4f4f;
+}
+
+#uv-gotodiscord img {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
 .credit {
   border-radius: 10px;
   padding: 10px;

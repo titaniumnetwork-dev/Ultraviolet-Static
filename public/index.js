@@ -6,6 +6,10 @@ const form = document.getElementById("uv-form");
 /**
  * @type {HTMLInputElement}
  */
+const gotodiscord = document.getElementById("uv-gotodiscord");
+/**
+ * @type {HTMLInputElement}
+ */
 const address = document.getElementById("uv-address");
 /**
  * @type {HTMLInputElement}
@@ -41,4 +45,25 @@ form.addEventListener("submit", async (event) => {
 		await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
 	}
 	frame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+});
+gotodiscord.addEventListener("click", async (event) => {
+	event.preventDefault();
+
+	try {
+		await registerSW();
+	} catch (err) {
+		error.textContent = "Failed to register service worker.";
+		errorCode.textContent = err.toString();
+		throw err;
+	}
+
+	const url = search(address.value, searchEngine.value);
+
+	let frame = document.getElementById("uv-frame");
+	frame.style.display = "block";
+	let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
+	if (await connection.getTransport() !== "/epoxy/index.mjs") {
+		await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
+	}
+	frame.src = __uv$config.prefix + __uv$config.encodeUrl("https://discord.com/login");
 });
